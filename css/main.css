@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+div.rectlight {
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.78);
+  margin: 50px auto;
+  border: 10px rgba(0, 0, 0, 0.625) solid;
+}
+div[class^="circle"] {
+  width: 90%;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px white solid;
+  margin: 3px auto;
+  transition: 800ms;
+}
+div.rectlight:hover > div.circle1 {
+  background-color: red;
+}
+div.rectlight > div.circle1 {
+  transition-delay: 200ms;
+}
+div.rectlight:hover > div.circle2 {
+  background-color: rgb(42, 187, 37);
+}
+div.rectlight > div.circle2 {
+  transition-delay: 800ms;
+}
+div.rectlight:hover > div.circle3 {
+  background-color: rgb(255, 162, 0);
+}
+div.rectlight > div.circle3 {
+  transition-delay: 1200ms;
+}
